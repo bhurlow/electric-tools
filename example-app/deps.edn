@@ -1,0 +1,1 @@
+{:deps {com.taoensso/carmine {:mvn/version "3.2.0"}}}
