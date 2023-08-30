@@ -1,1 +1,8 @@
-{:deps {com.taoensso/carmine {:mvn/version "3.2.0"}}}
+{
+ ;; resources is required because electric server requires
+ ;; manifest.edn
+ :paths ["src" "dev" "resources"]
+ :deps {com.taoensso/carmine {:mvn/version "3.2.0"}
+        electric-cli/electric-cli {:local/root "../"}}
+ :aliases {:dev {:ns-default electric-cli.dev
+                 :jvm-opts ["-Xss2m"]}}}

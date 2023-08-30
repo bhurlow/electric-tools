@@ -2,3 +2,12 @@ target
 .clj-kondo/
 .cpcache
 .lsp
+
+*/.shadow-cljs
+
+example-app/resources/public/js/*
+
+*/target
+*/.clj-kondo/
+*/.cpcache
+*/.lsp
