@@ -1,4 +1,4 @@
-(ns electric-cli.server
+(ns electric-tools.server
   "preferred entrypoint (cleaner middleware for integration) but no java 8 compat"
   (:require [clojure.java.io :as io]
             [hyperfiddle.electric-jetty-adapter :as adapter]

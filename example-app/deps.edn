@@ -1,8 +1,7 @@
-{
- ;; resources is required because electric server requires
- ;; manifest.edn
- :paths ["src" "dev" "resources"]
+{:paths ["src" "dev" "resources"]
  :deps {com.taoensso/carmine {:mvn/version "3.2.0"}
-        electric-cli/electric-cli {:local/root "../"}}
- :aliases {:dev {:ns-default electric-cli.dev
-                 :jvm-opts ["-Xss2m"]}}}
+        io.github.bhurlow/electric-tools {:git/sha "80662631260cbebed8b4843a2559d6a1edee4fb9"}}
+ :aliases {:dev {:ns-default electric-tools.dev
+                 :jvm-opts ["-Xss2m"]}
+           :build {:ns-default electric-tools.build
+                   :jvm-opts ["-Xss2m"]}}}

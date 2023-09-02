@@ -1,4 +1,4 @@
-(ns electric-cli.init
+(ns electric-tools.init
   (:require [hyperfiddle.electric :as e]
             [hyperfiddle.electric-dom2 :as dom]))
 

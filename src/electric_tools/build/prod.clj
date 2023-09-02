@@ -1,4 +1,4 @@
-(ns electric-cli.build.prod
+(ns electric-tools.build.prod
   "entrypoint for prod builds"
   (:require
    [electric-cli.server :as server]))

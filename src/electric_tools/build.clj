@@ -1,4 +1,4 @@
-(ns electric-cli.build)
+(ns electric-tools.build)
 
 ;; this basis would be the electric server
 ;; plus the input deps

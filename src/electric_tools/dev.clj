@@ -1,4 +1,4 @@
-(ns electric-cli.dev
+(ns electric-tools.dev
   (:require [electric-cli.server :as server]
             [shadow.cljs.devtools.api :as shadow-api]
             [shadow.cljs.devtools.server :as shadow-server]))
