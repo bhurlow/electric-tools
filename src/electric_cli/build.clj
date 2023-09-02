@@ -1,6 +1,6 @@
 (ns electric-cli.build)
 
-;; when building an electric project, the basis would be the electric server
+;; this basis would be the electric server
 ;; plus the input deps
 ;; (def basis (b/create-basis {:project "deps.edn"}))
 
@@ -62,4 +62,8 @@
   ;;          :main      'prod})
   )
 
-(defn noop [_])                         ; run to preload mvn deps
+(defn electric-build [{:keys [main-ns]}] 
+  (println "HELLO BUILD")
+  )
+
+;; (defn noop [_])                         ; run to preload mvn deps

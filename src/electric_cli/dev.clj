@@ -23,7 +23,7 @@
    :port 8080
    :resources-path "public"})
 
-(defn dev [{:keys [main-ns]}]
+(defn electric-dev [{:keys [main-ns]}]
   (shadow-server/start!) ;; not seeing how index.html is served by this
   (shadow-api/watch* (assoc (build-config main-ns) :build-id :dev) {})
   (server/start-server! electric-server-config))
